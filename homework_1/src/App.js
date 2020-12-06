@@ -1,3 +1,5 @@
+import s from "./App.module.css";
+
 import user from "./json/user.json";
 import Description from "./components/description/description";
 
@@ -6,14 +8,15 @@ import StatisticList from "./components/statistic/statisticList";
 
 import friends from "./json/friends.json";
 import FriendsList from "./components/friends/friendsList";
-import Section from "./components/friends/section";
+import Section from "./components/statistic/section";
 
 import transaction from "./json/transactions.json";
 import TransactionList from "./components/transaction/transactionList";
 
 export default function App() {
+  const title = "Upload stats";
   return (
-    <div>
+    <div className={s.App}>
       <Description
         avatar={user.avatar}
         name={user.name}
@@ -23,7 +26,7 @@ export default function App() {
         views={user.stats.views}
         likes={user.stats.likes}
       />
-      <Section className="statistics" title="Upload stats">
+      <Section className={s.statistics} title={title}>
         <StatisticList items={statisticData} />
       </Section>
 

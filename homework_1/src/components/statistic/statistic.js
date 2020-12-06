@@ -1,10 +1,10 @@
 import PropTypes from "prop-types";
 
 const Statistic = ({ label, percentage }) => (
-  <div>
+  <>
     <span className="label">{label}</span>
-    <span className="percentage"> {percentage}%</span>
-  </div>
+    <span className="percentage">{percentage}%</span>
+  </>
 );
 
 export default Statistic;

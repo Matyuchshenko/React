@@ -1,0 +1,24 @@
+.active {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: green;
+}
+.noActive {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  poses: status;
+  background-color: red;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  width: 512px;
+  border-radius: 7px;
+  box-shadow: 0 0 6px 0 #adacac;
+  padding: 8px 14px;
+  margin: 10px 0;
+}
