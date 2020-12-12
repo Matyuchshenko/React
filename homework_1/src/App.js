@@ -1,7 +1,8 @@
+import React from "react";
 import s from "./App.module.css";
 
 import user from "./json/user.json";
-import Description from "./components/description/description";
+import Profile from "./components/profile/profile";
 
 import statisticData from "./json/statistical-data.json";
 import StatisticList from "./components/statistic/statisticList";
@@ -17,7 +18,7 @@ export default function App() {
   const title = "Upload stats";
   return (
     <div className={s.App}>
-      <Description
+      <Profile
         avatar={user.avatar}
         name={user.name}
         tag={user.tag}

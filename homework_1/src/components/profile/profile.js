@@ -1,9 +1,8 @@
-// import React from "react";
 import PropTypes from "prop-types";
-import defaultImage from "../../images/default.jpg";
+import defaultImage from "./default.jpg";
 import s from "./description.module.css";
 
-const Description = ({
+const Profile = ({
   avatar = defaultImage,
   name,
   tag,
@@ -36,9 +35,14 @@ const Description = ({
   </div>
 );
 
-export default Description;
+// Profile.defaultProps = {
+//   avatar: defaultImage,
+// };
 
-Description.propTypes = {
+export default Profile;
+
+Profile.propTypes = {
+  defaultImage: PropTypes.string,
   avatar: PropTypes.string,
   name: PropTypes.string,
   tag: PropTypes.string,
